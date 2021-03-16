@@ -1,0 +1,57 @@
+.active__list {
+  @include list-reset;
+  padding: 0 20px;
+}
+
+.active__item {
+  box-shadow: 0 0 7px rgba($gray, 0.3);
+  background-color: $white;
+  margin-bottom: 40px;
+}
+
+.active__wrapper-title {
+  font-size: 14px;
+  color: $white;
+  padding: 10px 100px;
+
+  &--blue {
+    background-color: $blue-100;
+  }
+
+  &--pink {
+    background-color: $pink;
+  }
+
+  &--blue-200 {
+    background-color: $blue-200;
+  }
+}
+
+.active__title,
+.active__subtitle {
+  margin: 0;
+}
+
+.active__wrapper {
+  display: flex;
+  padding: 20px 0;
+}
+
+.active__wrapper-value {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+  &--border-right {
+    border-right: 1px rgba($gray, 0.3) solid;
+  }
+}
+
+.active__value {
+  font-size: 25px;
+  text-align: center;
+}
+
+.active__parameter {
+  text-align: center;
+}

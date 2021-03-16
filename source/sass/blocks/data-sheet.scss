@@ -1,0 +1,84 @@
+.data-sheet {
+  margin-top: 150px;
+}
+
+.data-sheet__list {
+  @include list-reset;
+  padding: 0 20px;
+}
+
+.data-sheet__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  box-shadow: 0 0 7px rgba($gray, 0.3);
+  background-color: $white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-bottom: 40px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: -15px;
+    left: 20px;
+  }
+
+  &--space::before {
+    background-image: url("/img/social-group.svg");
+  }
+
+  &--revenue::before {
+    background-image: url("/img/text-document.svg");
+  }
+
+  &--fixed::before {
+    background-image: url("/img/information.svg");
+  }
+}
+
+
+.data-sheet__title {
+  font-size: 14px;
+  color: $blue;
+  font-weight: 700;
+}
+
+.data-sheet__value {
+  margin-bottom: 10px;
+}
+
+.data-sheet__desc {
+  position: relative;
+  align-self: flex-start;
+  color: $gray-100;
+  padding-left: 33px;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 20px;
+    background-repeat: no-repeat;
+    bottom: -2px;
+    left: 10px;
+  }
+
+  &--one::before {
+    background-image: url("/img/bar-chart.svg");
+  }
+
+  &--two::before {
+    background-image: url("/img/calendar.svg");
+  }
+
+  &--three::before {
+    background-image: url("/img/information.svg");
+  }
+}

@@ -1,0 +1,99 @@
+.tasks {
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.tasks__wrapper {
+  background-color: $white;
+  padding: 0 20px;
+  box-shadow: 0 0 7px rgba($gray, 0.3);
+}
+
+.tasks__wrapper-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tasks__title {
+  font-size: 18px;
+}
+
+.tasks__wrapper-tasks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.tasks__wrapper-tasks-title {
+  font-size: 15px;
+  font-weight: 700;
+  width: 30%;
+
+  &--twocol {
+    width: 31%;
+    flex-shrink: 1;
+  }
+}
+
+.tasks__list {
+  @include list-reset;
+  padding: 0 20px;
+  padding-bottom: 20px;
+}
+
+.tasks__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px rgba($gray, 0.2) solid;
+}
+
+.tasks__item-title {
+  position: relative;
+  padding-left: 60px;
+  width: 200px;
+
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: $blue;
+    top: -7px;
+    left: 10px;
+    border-radius: 50%;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "L";
+    width: 35px;
+    height: 35px;
+    color: $white;
+    font-size: 18px;
+    top: -5px;
+    left: 23px;
+    border-radius: 50%;
+  }
+}
+
+.tasks__progressbar-wrapper {
+  display: flex;
+  flex-grow: 1;
+}
+
+.tasks__value {
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.tasks__progressbar {
+  align-self: center;
+  flex-basis: 37%;
+}

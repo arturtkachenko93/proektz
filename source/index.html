@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guru Able</title>
+  <link rel="preload" href="fonts/open-sans-v18-latin-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/open-sans-v18-latin-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__wrapper container">
+      <div class="page-header__wrapper-button">
+        <button class="page-header__button" type="button">
+          <span class="visually-hidden">Открыть меню сайта</span>
+        </button>
+        <a class="page-header__search" href="#">
+          <img src="img/search.svg" alt="Поиск по сайту" width="14" height="14">
+        </a>
+      </div>
+      <nav class="page-header__nav header-nav">
+        <div class="header-nav__user">
+          <img class="header-nav__user-avatar" src="img/avatar.jpg" alt="Картинка пользователя" width="40" height="40">
+          <span class="header-nav__user-name">Артур Ткаченко</span>
+          <span class="header-nav__user-details">UX Designer</span>
+          <button class="header-nav__user-details-button">
+            <span class="visually-hidden">Открыть меню пользователя</span>
+          </button>
+          <ul class="header-nav__user-nav-list user-nav-list">
+            <li class="user-nav-list__item">
+              <a class="user-nav-list__link" href="#">Профиль</a>
+            </li>
+            <li class="user-nav-list__item">
+              <a class="user-nav-list__link" href="#">Настройки</a>
+            </li>
+            <li class="user-nav-list__item">
+              <a class="user-nav-list__link" href="#">Выйти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-nav__search-box">
+          <input type="text" placeholder="Поиск">
+          <span class="header-nav__search-img"></span>
+        </div>
+        <span class="header-nav__title">Layout</span>
+        <ul class="header-nav__list nav-list">
+          <li class="nav-list__item nav-list__item--active">
+            <a class="nav-list__link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Components</a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="#">Меню второго уровня</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">Меню второго уровня</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">Меню второго уровня</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="header-nav__title">Forms & Tables</span>
+        <ul class="header-nav__list nav-list">
+          <li class="nav-list__item nav-list__item--active">
+            <a class="nav-list__link" href="#">Form Components</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Basic Table</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="page-header__logo" href="#">
+        <img src="img/logo.png" alt="Логотип сайта" width="170" height="57">
+      </a>
+      <a class="page-header__mobile-options" href="#"></a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Использование социальных сетей</h1>
+    <article class="data-sheet">
+      <h2 class="visually-hidden">Вывод значений</h2>
+      <ul class="data-sheet__list">
+        <li class="data-sheet__item data-sheet__item--space">
+          <span class="data-sheet__title">Use space</span>
+          <span class="data-sheet__value">49/50GB</span>
+          <span class="data-sheet__desc data-sheet__desc--one">Get more space</span>
+        </li>
+        <li class="data-sheet__item data-sheet__item--revenue">
+          <span class="data-sheet__title">Revenue</span>
+          <span class="data-sheet__value">$23,589</span>
+          <span class="data-sheet__desc data-sheet__desc--two">Last 2 hours</span>
+        </li>
+        <li class="data-sheet__item data-sheet__item--fixed">
+          <span class="data-sheet__title">Fixed issue</span>
+          <span class="data-sheet__value">45</span>
+          <span class="data-sheet__desc data-sheet__desc--three">Tracked via microsoft</span>
+        </li>
+      </ul>
+    </article>
+
+    <article class="diagrams">
+      <div id="shedule">
+        <h2 class="visually-hidden">График значений</h2>
+      </div>
+    </article>
+
+    <article class="active">
+      <h2 class="visually-hidden">Активность социальных сетей</h2>
+      <ul class="active__list">
+        <li class="active__item">
+          <div class="active__wrapper-title active__wrapper-title--blue">
+            <h3 class="active__title">facebook</h3>
+            <p class="active__subtitle">blog page timeline</p>
+          </div>
+          <div class="active__wrapper">
+            <div class="active__wrapper-value active__wrapper-value--border-right">
+              <span class="active__value">23</span>
+              <span class="active__parameter">Active</span>
+            </div>
+            <div class="active__wrapper-value">
+              <span class="active__value">23</span>
+              <span class="active__parameter">Comment</span>
+            </div>
+          </div>
+        </li>
+        <li class="active__item">
+          <div class="active__wrapper-title active__wrapper-title--pink">
+            <h3 class="active__title">dribble</h3>
+            <p class="active__subtitle">product page analysis</p>
+          </div>
+          <div class="active__wrapper">
+            <div class="active__wrapper-value active__wrapper-value--border-right">
+              <span class="active__value">23</span>
+              <span class="active__parameter">Live</span>
+            </div>
+            <div class="active__wrapper-value">
+              <span class="active__value">23</span>
+              <span class="active__parameter">Messages</span>
+            </div>
+          </div>
+        </li>
+        <li class="active__item">
+          <div class="active__wrapper-title active__wrapper-title--blue-200">
+            <h3 class="active__title">twitter</h3>
+            <p class="active__subtitle">current new timeline</p>
+          </div>
+          <div class="active__wrapper">
+            <div class="active__wrapper-value active__wrapper-value--border-right">
+              <span class="active__value">25</span>
+              <span class="active__parameter">New tweet</span>
+            </div>
+            <div class="active__wrapper-value">
+              <span class="active__value">450+</span>
+              <span class="active__parameter">Follower</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <article class="tasks">
+      <div class="tasks__wrapper">
+        <div class="tasks__wrapper-button">
+          <h2 class="tasks__title">Time spent: project & task</h2>
+          <button class="tasks__button" type="button">&#60;</button>
+        </div>
+        <div class="tasks__wrapper-tasks">
+          <p class="tasks__wrapper-tasks-title">Project & task</p>
+          <p class="tasks__wrapper-tasks-title tasks__wrapper-tasks-title--twocol">Time & Spents</p>
+        </div>
+        <ul class="tasks__list">
+          <li class="tasks__item">
+            <p class="tasks__item-title">UI Design</p>
+            <div class="tasks__progressbar-wrapper">
+              <p class="tasks__value">4:36</p>
+              <div class="tasks__progressbar progressbar">
+                <div class="progressbar__value progressbar__value--blue" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </li>
+          <li class="tasks__item">
+            <p class="tasks__item-title">Design Android App</p>
+            <div class="tasks__progressbar-wrapper">
+              <p class="tasks__value">4:36</p>
+              <div class="tasks__progressbar progressbar">
+                <div class="progressbar__value progressbar__value--pink" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </li>
+          <li class="tasks__item">
+            <p class="tasks__item-title">Logo Design</p>
+            <div class="tasks__progressbar-wrapper">
+              <p class="tasks__value">4:36</p>
+              <div class="tasks__progressbar progressbar">
+                <div class="progressbar__value progressbar__value--blue" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article id="myDIV" class="todo">
+      <div class="todo__wrapper">
+        <h2 class="todo__title">To do list</h2>
+          <input type="text" id="myInput" placeholder="Название...">
+          <button class="todo" onclick="newElement()" class="addBtn" type="button">Добавить</button>
+        </div>
+
+        <ul id="myUL" class="todo__list">
+          <li class="todo__item">Shedule Meetings with Compnes</li>
+          <li class="todo__item checked">Neeting with HOD's and borad</li>
+          <li class="todo__item">Create template, admin with responsive</li>
+          <li class="todo__item">Neeting with HOD's and borad</li>
+        </ul>
+      </div>
+    </article>
+  </main>
+
+  <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/todo.js"></script>
+</body>
+
+</html>
