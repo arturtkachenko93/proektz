@@ -13,72 +13,80 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper container">
-      <div class="page-header__wrapper-button">
-        <button class="page-header__button" type="button">
-          <span class="visually-hidden">Открыть меню сайта</span>
-        </button>
-        <a class="page-header__search" href="#">
-          <img src="img/search.svg" alt="Поиск по сайту" width="14" height="14">
-        </a>
-      </div>
-      <nav class="page-header__nav header-nav">
-        <div class="header-nav__user">
-          <img class="header-nav__user-avatar" src="img/avatar.jpg" alt="Картинка пользователя" width="40" height="40">
-          <span class="header-nav__user-name">Артур Ткаченко</span>
-          <span class="header-nav__user-details">UX Designer</span>
-          <button class="header-nav__user-details-button">
-            <span class="visually-hidden">Открыть меню пользователя</span>
+        <div class="page-header__wrapper-button">
+          <button class="page-header__button" type="button">
+            <span class="visually-hidden">Открыть меню сайта</span>
           </button>
-          <ul class="header-nav__user-nav-list user-nav-list">
-            <li class="user-nav-list__item">
-              <a class="user-nav-list__link" href="#">Профиль</a>
-            </li>
-            <li class="user-nav-list__item">
-              <a class="user-nav-list__link" href="#">Настройки</a>
-            </li>
-            <li class="user-nav-list__item">
-              <a class="user-nav-list__link" href="#">Выйти</a>
-            </li>
-          </ul>
+          <a class="page-header__search" href="#">
+            <img src="img/search.svg" alt="Поиск по сайту" width="14" height="14">
+          </a>
         </div>
-        <div class="header-nav__search-box">
-          <input type="text" placeholder="Поиск">
-          <span class="header-nav__search-img"></span>
-        </div>
-        <span class="header-nav__title">Layout</span>
-        <ul class="header-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link" href="#">Dashboard</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Components</a>
-            <ul class="submenu">
-              <li class="submenu__item">
-                <a href="#">Меню второго уровня</a>
+        <nav class="page-header__nav header-nav">
+          <div class="header-nav__user">
+            <img class="header-nav__user-avatar" src="img/avatar.jpg" alt="Картинка пользователя" width="40" height="40">
+            <span class="header-nav__user-name">Артур Ткаченко</span>
+            <span class="header-nav__user-details">UX Designer</span>
+            <button class="header-nav__user-details-button">
+              <span class="visually-hidden">Открыть меню пользователя</span>
+            </button>
+            <ul class="header-nav__user-nav-list user-nav-list">
+              <li class="user-nav-list__item">
+                <a class="user-nav-list__link" href="#">Профиль</a>
               </li>
-              <li class="submenu__item">
-                <a href="#">Меню второго уровня</a>
+              <li class="user-nav-list__item">
+                <a class="user-nav-list__link" href="#">Настройки</a>
               </li>
-              <li class="submenu__item">
-                <a href="#">Меню второго уровня</a>
+              <li class="user-nav-list__item">
+                <a class="user-nav-list__link" href="#">Выйти</a>
               </li>
             </ul>
-          </li>
-        </ul>
-        <span class="header-nav__title">Forms & Tables</span>
-        <ul class="header-nav__list nav-list">
-          <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link" href="#">Form Components</a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="#">Basic Table</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="page-header__logo" href="#">
-        <img src="img/logo.png" alt="Логотип сайта" width="170" height="57">
-      </a>
+          </div>
+          <div class="header-nav__search-box">
+            <input type="text" placeholder="Поиск">
+            <span class="header-nav__search-img"></span>
+          </div>
+          <span class="header-nav__title">Layout</span>
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Components</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a href="#">Меню второго уровня</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#">Меню второго уровня</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="#">Меню второго уровня</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <span class="header-nav__title">Forms & Tables</span>
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link" href="#">Form Components</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">Basic Table</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="page-header__logo" href="#">
+          <img src="img/logo.png" alt="Логотип сайта" width="170" height="57">
+        </a>
       <a class="page-header__mobile-options" href="#"></a>
+      <button class="page-header__button-viewsize" type="button">
+        <span class="visually_hidden">На весь экран</span>
+      </button>
+      <div class="page-header__user">
+        <img class="page-header__image-ava" src="/source/img/avatar.jpg" alt="Аватар пользователя" width="40" height="40">
+        <span class="page-header__name">Артур Ткаченко</span>
+        <button class="page-header__name-list" type="button"></button>
+      </div>
     </div>
   </header>
 
@@ -96,6 +104,11 @@
           <span class="data-sheet__title">Revenue</span>
           <span class="data-sheet__value">$23,589</span>
           <span class="data-sheet__desc data-sheet__desc--two">Last 2 hours</span>
+        </li>
+        <li class="data-sheet__item data-sheet__item--fixed">
+          <span class="data-sheet__title">Fixed issue</span>
+          <span class="data-sheet__value">45</span>
+          <span class="data-sheet__desc data-sheet__desc--three">Tracked via microsoft</span>
         </li>
         <li class="data-sheet__item data-sheet__item--fixed">
           <span class="data-sheet__title">Fixed issue</span>
@@ -206,26 +219,15 @@
         </ul>
       </div>
     </article>
-    <article id="myDIV" class="todo">
+    <article class="todo">
       <div class="todo__wrapper">
         <h2 class="todo__title">To do list</h2>
-          <input type="text" id="myInput" placeholder="Название...">
-          <button class="todo" onclick="newElement()" class="addBtn" type="button">Добавить</button>
-        </div>
-
-        <ul id="myUL" class="todo__list">
-          <li class="todo__item">Shedule Meetings with Compnes</li>
-          <li class="todo__item checked">Neeting with HOD's and borad</li>
-          <li class="todo__item">Create template, admin with responsive</li>
-          <li class="todo__item">Neeting with HOD's and borad</li>
-        </ul>
-      </div>
     </article>
+
   </main>
 
   <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/todo.js"></script>
 </body>
 
 </html>
