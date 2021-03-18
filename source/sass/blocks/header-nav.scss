@@ -1,11 +1,61 @@
 .header-nav {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 1800px;
+    top: 100px;
+    left: 0;
+    order: 3;
+    background-color: $white;
+    box-shadow: 0 0 7px rgba($gray, 0.3);
+    padding: 40px 20px;
+  }
 }
 
 .header-nav--opened {
-  display: block;
+  display: flex;
 }
 
 .header-nav--closed {
+  display: none;
+}
+
+.header-nav__user {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav__user-avatar {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.header-nav__user-wrapper {
+  width: 75%;
+}
+
+.header-nav__user-name {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.header-nav__user-details {
+  display: block;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.header-nav__user-details-button {
+  box-sizing: border-box;
+  min-width: 5%;
+  height: 10px;
+
+}
+
+.header-nav__user-nav-list {
   display: none;
 }

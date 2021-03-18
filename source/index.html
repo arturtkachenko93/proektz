@@ -7,7 +7,7 @@
   <title>Guru Able</title>
   <link rel="preload" href="fonts/open-sans-v18-latin-cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/open-sans-v18-latin-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -22,75 +22,77 @@
           </a>
         </div>
         <nav class="page-header__nav header-nav">
-          <div class="header-nav__user">
-            <img class="header-nav__user-avatar" src="img/avatar.jpg" alt="Картинка пользователя" width="40" height="40">
-            <span class="header-nav__user-name">Артур Ткаченко</span>
-            <span class="header-nav__user-details">UX Designer</span>
-            <button class="header-nav__user-details-button">
-              <span class="visually-hidden">Открыть меню пользователя</span>
-            </button>
-            <ul class="header-nav__user-nav-list user-nav-list">
-              <li class="user-nav-list__item">
-                <a class="user-nav-list__link" href="#">Профиль</a>
+            <div class="header-nav__user">
+              <img class="header-nav__user-avatar" src="img/avatar.jpg" alt="Картинка пользователя" width="40" height="40">
+              <div class="header-nav__user-wrapper">
+                <span class="header-nav__user-name">Артур Ткаченко</span>
+                <span class="header-nav__user-details">UX Designer</span>
+                <button class="header-nav__user-details-button">
+                  <span class="visually-hidden">Открыть меню пользователя</span>
+                </button>
+                <ul class="header-nav__user-nav-list user-nav-list">
+                  <li class="user-nav-list__item">
+                    <a class="user-nav-list__link" href="#">Профиль</a>
+                  </li>
+                  <li class="user-nav-list__item">
+                    <a class="user-nav-list__link" href="#">Настройки</a>
+                  </li>
+                  <li class="user-nav-list__item">
+                    <a class="user-nav-list__link" href="#">Выйти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="header-nav__search-box">
+              <input type="text" placeholder="Поиск">
+              <span class="header-nav__search-img"></span>
+            </div>
+            <span class="header-nav__title">Layout</span>
+            <ul class="header-nav__list nav-list">
+              <li class="nav-list__item nav-list__item--active">
+                <a class="nav-list__link" href="#">Dashboard</a>
               </li>
-              <li class="user-nav-list__item">
-                <a class="user-nav-list__link" href="#">Настройки</a>
-              </li>
-              <li class="user-nav-list__item">
-                <a class="user-nav-list__link" href="#">Выйти</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Components</a>
+                <ul class="submenu">
+                  <li class="submenu__item">
+                    <a href="#">Меню второго уровня</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Меню второго уровня</a>
+                  </li>
+                  <li class="submenu__item">
+                    <a href="#">Меню второго уровня</a>
+                  </li>
+                </ul>
               </li>
             </ul>
-          </div>
-          <div class="header-nav__search-box">
-            <input type="text" placeholder="Поиск">
-            <span class="header-nav__search-img"></span>
-          </div>
-          <span class="header-nav__title">Layout</span>
-          <ul class="header-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link" href="#">Dashboard</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Components</a>
-              <ul class="submenu">
-                <li class="submenu__item">
-                  <a href="#">Меню второго уровня</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#">Меню второго уровня</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#">Меню второго уровня</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <span class="header-nav__title">Forms & Tables</span>
-          <ul class="header-nav__list nav-list">
-            <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link" href="#">Form Components</a>
-            </li>
-            <li class="nav-list__item">
-              <a class="nav-list__link" href="#">Basic Table</a>
-            </li>
-          </ul>
+            <span class="header-nav__title">Forms & Tables</span>
+            <ul class="header-nav__list nav-list">
+              <li class="nav-list__item nav-list__item--active">
+                <a class="nav-list__link" href="#">Form Components</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Basic Table</a>
+              </li>
+            </ul>
         </nav>
         <a class="page-header__logo" href="#">
           <img src="img/logo.png" alt="Логотип сайта" width="170" height="57">
         </a>
       <a class="page-header__mobile-options" href="#"></a>
-      <button class="page-header__button-viewsize" type="button">
-        <span class="visually_hidden">На весь экран</span>
-      </button>
-      <div class="page-header__user">
-        <img class="page-header__image-ava" src="/source/img/avatar.jpg" alt="Аватар пользователя" width="40" height="40">
-        <span class="page-header__name">Артур Ткаченко</span>
-        <button class="page-header__name-list" type="button"></button>
-      </div>
     </div>
   </header>
+  <div class="page-header__user">
+    <button class="page-header__button-viewsize" type="button">
+      <span class="visually_hidden">На весь экран</span>
+    </button>
+    <img class="page-header__image-ava" src="/source/img/avatar.jpg" alt="Аватар пользователя" width="40" height="40">
+    <span class="page-header__name">Артур Ткаченко</span>
+    <button class="page-header__name-list" type="button"></button>
+  </div>
 
-  <main class="container">
+  <main class="page-main container">
     <h1 class="visually-hidden">Использование социальных сетей</h1>
     <article class="data-sheet">
       <h2 class="visually-hidden">Вывод значений</h2>

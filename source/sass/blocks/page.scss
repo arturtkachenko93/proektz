@@ -14,3 +14,9 @@
   color: $black;
   overflow-x: hidden;
 }
+
+.page-main {
+  @media (min-width: $desktop-width) {
+    padding-left: 320px;
+  }
+}
