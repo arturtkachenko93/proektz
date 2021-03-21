@@ -16,10 +16,10 @@ anychart.onDocumentReady(function () {
   // create data
   var data = [
     {month:"January", sales: 12000},
-    {month:"February", sales:  15000},
-    {month:"March", sales:  16000},
-    {month:"April", sales:  14000},
-    {month:"May", sales:  10000}
+    {month:"February", sales: 15000},
+    {month:"March", sales: 16000},
+    {month:"April", sales: 14000},
+    {month:"May", sales: 10000}
   ];
 
   // create a data set
