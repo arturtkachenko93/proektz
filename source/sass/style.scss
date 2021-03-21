@@ -5,10 +5,11 @@
 @import "global.scss";
 @import "mixin.scss";
 
+
 // Blocks
 
+@import "blocks/preolader.scss";
 @import "blocks/container.scss";
-@import "blocks/header-main.scss";
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/header-nav.scss";
@@ -18,3 +19,5 @@
 @import "blocks/tasks.scss";
 @import "blocks/progressbar.scss";
 @import "blocks/todo.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/user-nav-list.scss";

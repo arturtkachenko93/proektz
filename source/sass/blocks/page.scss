@@ -1,5 +1,6 @@
 .page {
   overflow-x: hidden;
+
 }
 
 .page__body {
@@ -18,5 +19,6 @@
 .page-main {
   @media (min-width: $desktop-width) {
     padding-left: 320px;
+    margin-top: 100px;
   }
 }

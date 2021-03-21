@@ -11,6 +11,44 @@
 </head>
 
 <body class="page__body">
+  <!-- Pre-loader start -->
+  <div class="theme-loader">
+    <div class="ball-scale">
+      <div class='contain'>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+        <div class="ring">
+          <div class="frame"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Pre-loader end -->
   <header class="page-header">
     <div class="page-header__wrapper container">
         <div class="page-header__wrapper-button">
@@ -27,53 +65,55 @@
               <div class="header-nav__user-wrapper">
                 <span class="header-nav__user-name">Артур Ткаченко</span>
                 <span class="header-nav__user-details">UX Designer</span>
-                <button class="header-nav__user-details-button">
-                  <span class="visually-hidden">Открыть меню пользователя</span>
-                </button>
+                <span class="header-nav__user-details-button"></span>
                 <ul class="header-nav__user-nav-list user-nav-list">
-                  <li class="user-nav-list__item">
+                  <li class="user-nav-list__item user-nav-list__item--profile">
                     <a class="user-nav-list__link" href="#">Профиль</a>
                   </li>
-                  <li class="user-nav-list__item">
+                  <li class="user-nav-list__item user-nav-list__item--settings">
                     <a class="user-nav-list__link" href="#">Настройки</a>
                   </li>
-                  <li class="user-nav-list__item">
+                  <li class="user-nav-list__item user-nav-list__item--exit">
                     <a class="user-nav-list__link" href="#">Выйти</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="header-nav__search-box">
-              <input type="text" placeholder="Поиск">
+              <input class="header-nav__search-input" type="text" placeholder="Поиск">
               <span class="header-nav__search-img"></span>
             </div>
-            <span class="header-nav__title">Layout</span>
+           <span class="header-nav__title">Layout</span>
             <ul class="header-nav__list nav-list">
-              <li class="nav-list__item nav-list__item--active">
-                <a class="nav-list__link" href="#">Dashboard</a>
+              <li class="nav-list__item nav-list__item--dash">
+                <a class="nav-list__link nav-list__link--active" href="#">Dashboard</a>
               </li>
-              <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Components</a>
-                <ul class="submenu">
-                  <li class="submenu__item">
-                    <a href="#">Меню второго уровня</a>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#">Меню второго уровня</a>
-                  </li>
-                  <li class="submenu__item">
-                    <a href="#">Меню второго уровня</a>
-                  </li>
-                </ul>
+              <li class="nav-list__item nav_list__item--comp">
+                <input type="checkbox" name ="group-1" id="group-1">
+                <label class="nav-list__item-title nav-list__item-title--sub" for="group-1">Components</label>
+                    <ul class="nav-list__sub">
+                      <li>
+                        <input type="checkbox" name ="sub-group-2" id="sub-group-2">
+                        <label for="sub-group-2">Breadcrumbs</label>
+                        <ul>
+                          <li><a href="#0">Разработка</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">Web</a>
+                      </li>
+                    </ul>
               </li>
             </ul>
             <span class="header-nav__title">Forms & Tables</span>
             <ul class="header-nav__list nav-list">
-              <li class="nav-list__item nav-list__item--active">
-                <a class="nav-list__link" href="#">Form Components</a>
-              </li>
               <li class="nav-list__item">
-                <a class="nav-list__link" href="#">Basic Table</a>
+                <input type="checkbox" name ="group-2" id="group-2">
+                <label class="nav-list__item-title nav-list__item-title--form nav-list__item-title--sub" for="group-2">Forms</label>
+                <ul>
+                  <li><a class="nav-list__link" href="#">Login</a></li>
+                  <li><a class="nav-list__link" href="#">Map</a></li>
+                </ul>
               </li>
             </ul>
         </nav>
@@ -84,12 +124,27 @@
     </div>
   </header>
   <div class="page-header__user">
-    <button class="page-header__button-viewsize" type="button">
-      <span class="visually_hidden">На весь экран</span>
-    </button>
-    <img class="page-header__image-ava" src="/source/img/avatar.jpg" alt="Аватар пользователя" width="40" height="40">
-    <span class="page-header__name">Артур Ткаченко</span>
-    <button class="page-header__name-list" type="button"></button>
+    <div class="page-header__user-wrapper">
+      <button class="page-header__button-viewsize" type="button" onclick="openFullscreen()">
+        <span class="visually-hidden">На весь экран</span>
+      </button>
+      <div class="page-header__user-ava-wrapper">
+        <img class="page-header__image-ava" src="img/avatar.jpg" alt="Аватар пользователя" width="45" height="45">
+        <span class="page-header__name">Артур Ткаченко</span>
+        <ul class="page-header__user-nav user-nav-list">
+          <li class="user-nav-list__item user-nav-list__item--profile">
+            <a class="user-nav-list__link" href="#">Профиль</a>
+          </li>
+          <li class="user-nav-list__item user-nav-list__item--settings">
+            <a class="user-nav-list__link" href="#">Настройки</a>
+          </li>
+          <li class="user-nav-list__item user-nav-list__item--exit">
+            <a class="user-nav-list__link" href="#">Выйти</a>
+          </li>
+        </ul>
+        <span class="page-header__user-details-button"></span>
+      </div>
+    </div>
   </div>
 
   <main class="page-main container">
@@ -184,7 +239,7 @@
       <div class="tasks__wrapper">
         <div class="tasks__wrapper-button">
           <h2 class="tasks__title">Time spent: project & task</h2>
-          <button class="tasks__button" type="button">&#60;</button>
+          <span class="tasks__button"></span>
         </div>
         <div class="tasks__wrapper-tasks">
           <p class="tasks__wrapper-tasks-title">Project & task</p>
@@ -192,29 +247,29 @@
         </div>
         <ul class="tasks__list">
           <li class="tasks__item">
-            <p class="tasks__item-title">UI Design</p>
+            <p class="tasks__item-title tasks__item-title--ui">UI Design</p>
             <div class="tasks__progressbar-wrapper">
               <p class="tasks__value">4:36</p>
               <div class="tasks__progressbar progressbar">
-                <div class="progressbar__value progressbar__value--blue" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progressbar__value tasks__progressbar--ui" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </li>
           <li class="tasks__item">
-            <p class="tasks__item-title">Design Android App</p>
+            <p class="tasks__item-title tasks__item-title--app">Design Android App</p>
             <div class="tasks__progressbar-wrapper">
               <p class="tasks__value">4:36</p>
               <div class="tasks__progressbar progressbar">
-                <div class="progressbar__value progressbar__value--pink" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progressbar__value tasks__progressbar--app" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </li>
           <li class="tasks__item">
-            <p class="tasks__item-title">Logo Design</p>
+            <p class="tasks__item-title tasks__item-title--logo">Logo Design</p>
             <div class="tasks__progressbar-wrapper">
               <p class="tasks__value">4:36</p>
               <div class="tasks__progressbar progressbar">
-                <div class="progressbar__value progressbar__value--blue" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progressbar__value tasks__progressbar--logo" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
           </li>
@@ -222,12 +277,21 @@
       </div>
     </article>
     <article class="todo">
-      <div class="todo__wrapper">
-        <h2 class="todo__title">To do list</h2>
+      <div class="todo__wrapper"></div>
+        <div class="todo__header">
+          <h1 class="todo__title">To do list</h1>
+          <div>
+            <input type="text" placeholder="Ввеcти новую задачу" id="toDoEl">
+            <button class="todo__button" onclick="newElement()">Add</button>
+          </div>
+        </div>
+      </div>
+      <ul class="todo__list" id="list">
+
+      </ul>
     </article>
 
   </main>
-
   <script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js"></script>
   <script src="js/script.js"></script>
 </body>

@@ -2,8 +2,19 @@
   height: 500px;
   padding: 0 20px;
   margin-bottom: 40px;
+
+  @media (min-width: $desktop-width) {
+    width: 60%;
+    height: 571px;
+    float: right;
+  }
+
+  &:hover {
+    @include anim-min;
+  }
 }
 
 #shedule {
   height: 100%;
+  box-shadow: 0 0 7px rgba($gray, 0.3);
 }

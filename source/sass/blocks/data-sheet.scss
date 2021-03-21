@@ -1,5 +1,10 @@
 .data-sheet {
   margin-top: 150px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-top: 40px;
+  }
 }
 
 .data-sheet__list {
@@ -28,30 +33,67 @@
     width: 40%;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 22%;
+  }
+
+  &:hover {
+    @include anim-plus
+  }
+
   &::before {
     display: block;
     position: absolute;
     content: "";
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     background-repeat: no-repeat;
-    top: -15px;
-    left: 20px;
+    top: -12px;
+    left: 26px;
+    transition: all 1s 0.1s ease-in;
+    z-index: 1;
+  }
+
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    top: -19px;
+    left: 16px;
   }
 
   &--space::before {
     background-image: url("/img/social-group.svg");
+    z-index: 1;
+  }
+
+  &--space::after {
+    background-color: $blue;
   }
 
   &--revenue::before {
     background-image: url("/img/text-document.svg");
   }
 
+  &--revenue::after {
+    background-color: $pink;
+  }
+
   &--fixed::before {
     background-image: url("/img/information.svg");
   }
+
+  &--fixed::after {
+    background-color: $green;
+  }
 }
 
+.data-sheet__item:hover::before {
+  transform: rotate(360deg);
+}
 
 .data-sheet__title {
   font-size: 14px;

@@ -1,0 +1,164 @@
+.nav-list {
+  width: 95%;
+  margin-bottom: 20px;
+  animation: smallToBig 500ms ease;
+}
+
+.nav-list ul {
+  display: none;
+}
+
+.nav-list ul a {
+  color: $black;
+
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba($gray, 0.2);
+  }
+}
+
+.nav-list__item {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    top: 8px;
+    right: 214px;
+  }
+
+  &--dash::before {
+    background-image: url("/img/qwerty.svg");
+  }
+}
+
+.nav-list__link {
+  color: $black;
+  line-height: 18px;
+
+  &--active {
+    font-weight: 700;
+  }
+
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba($gray, 0.2);
+  }
+}
+
+.nav-list__item-title {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 0;
+    background-image: url("/img/messages.svg");
+  }
+
+  &--sub::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-repeat: no-repeat;
+    top: 18px;
+    left: 230px;
+    background-image: url("/img/arrow-down.svg");
+    transform: rotate(-90deg);
+  }
+
+  &--form::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 0;
+    background-image: url("/img/form.svg");
+  }
+
+  &:hover {
+    transition: 0.3s;
+    background-color: rgba($gray, 0.2);
+  }
+}
+
+.nav-list input[type=checkbox] {
+  /* Скрыть чекбоксы*/
+  position: absolute;
+  opacity: 0;
+}
+
+.nav-list label, .nav-list a {
+  position: relative;
+  display: block;
+  padding: 15px 15px 15px 44px;
+
+  &:hover {
+    transition: 0.4s;
+    background-color: rgba($gray, 0.1);
+  }
+}
+
+.nav-list label {
+  cursor: pointer;
+}
+
+.nav-list input[type=checkbox]:checked + label + ul,
+.nav-list input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  display: block;
+  animation: smallToBig 500ms ease;
+}
+
+.nav-list ul label,
+.nav-list ul a {
+  padding-left: 62px;
+}
+
+.nav-list ul ul label,
+.nav-list ul ul a {
+  padding-left: 100px;
+
+  &::before {
+    left: 77px;
+  }
+}
+
+.nav-list ul label,
+.nav-list ul a {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 37px;
+    background-image: url("/img/arrow-down.svg");
+  }
+}
+
+@keyframes smallToBig{
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+ }

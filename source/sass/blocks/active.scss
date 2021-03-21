@@ -1,3 +1,9 @@
+.active {
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
+}
+
 .active__list {
   @include list-reset;
   padding: 0 20px;
@@ -7,23 +13,52 @@
   box-shadow: 0 0 7px rgba($gray, 0.3);
   background-color: $white;
   margin-bottom: 40px;
+  border-radius: 20px;
+
+  &:hover {
+    @include anim-min;
+  }
 }
 
 .active__wrapper-title {
+  position: relative;
   font-size: 14px;
   color: $white;
   padding: 10px 100px;
 
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 12px;
+  }
+
   &--blue {
     background-color: $blue-100;
+
+    &::before {
+      background-image: url("/img/facebook.svg");
+    }
   }
 
   &--pink {
     background-color: $pink;
+
+    &::before {
+      background-image: url("/img/gmail.svg");
+    }
   }
 
   &--blue-200 {
     background-color: $blue-200;
+
+    &::before {
+      background-image: url("/img/twitter.svg");
+    }
   }
 }
 
