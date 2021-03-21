@@ -114,10 +114,6 @@
   align-items: center;
   width: 100%;
   padding: 30px 63px 25px 320px;
-
-  &:hover .user-nav-list {
-    display: block;
-  }
 }
 
 .page-header__button-viewsize {
@@ -143,6 +139,11 @@
   justify-content: flex-end;
   width: 300px;
   margin-left: auto;
+
+
+  &:hover .user-nav-list {
+    display: block;
+  }
 }
 
 .page-header__image-ava {
