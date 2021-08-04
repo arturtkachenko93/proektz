@@ -1,7 +1,7 @@
 # Личный проект «TZ»
 Разработка веб-интерфейса
 
-## Открыть [Demo](https://arturtkachenko93.github.io/tz/)
+## Открыть [Demo](https://arturtkachenko93.github.io/proektz/)
 
 ## Установка локально
 Перед запуском необходимо установить следующие компоненты:
